@@ -55,10 +55,12 @@ def profileGenerator(distance, cruise_velocity, acceleration):
         running_time_ms += 1000*loop_run_time
     
 
-    plt.plot(t_list, x_list)
-    plt.plot(t_list, v_list)
-    plt.plot(t_list, a_list)
-    plt.xlabel('Time, t (s)', fontsize = 12)
+    plt.plot(t_list, x_list, label= 'Position')
+    plt.plot(t_list, v_list, label = 'Velocity')
+    plt.plot(t_list, a_list, label = 'Acceleration')
+    plt.xlabel('Time, s', fontsize = 12)
+    plt.legend()
+
 
 
 
